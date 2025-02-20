@@ -1,1 +1,6 @@
-spring.application.name=brewery-config-server
+spring:
+  application:
+    name: brewery-config-server
+
+server:
+  port: 8888
