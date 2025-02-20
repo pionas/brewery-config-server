@@ -19,9 +19,11 @@ logging:
     org.springframework.web: DEBUG
 
 eureka:
+  username: netflix
+  password: "{cipher}AQArMkBS7/zgH087i4BlownXemkjF7jBex+jg4REo11XwNaRFerj5mP49z36eN6GT+snagJqUKuLfXTagzkB5iqRWPov0t3NUeU71YfYs6v/5sBkeMo0L1u86a3XfuvIvRe0Oc/RlXkCjBF8Yk9GrE1qvc3tZjp2dSaLBz+wmz8jJ7arpogbg72vXL46pmORKaFWyqfWh4OfrDoR1atC3jXnYtG1WjtitfW7AAreaaxEdweGpyb6A+iXcAYkgUunplUig31rPf9jVUlP42q/xmuG83YpgcZFg4ggfspkFHcfVoyGto8D9K2GjSi+9iJzhCf89rYioRJVEgJ0edPHiRi/IHrT+a6+4TVKwSJKm9dyEgZwW1zCzo7Rf7+M6Q5yr2k="
   client:
     serviceUrl:
-      defaultZone: http://netflix:eureka@localhost:8761/eureka
+      defaultZone: http://${eureka.username}:${eureka.password}@localhost:8761/eureka
 
 encrypt:
   key-store:
