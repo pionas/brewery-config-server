@@ -9,8 +9,6 @@ spring:
           clone-on-start: true
           search-paths: '{application}'
           default-label: 'main'
-  main:
-    web-application-type: reactive
 
 server:
   port: 8888
