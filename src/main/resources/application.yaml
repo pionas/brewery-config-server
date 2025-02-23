@@ -9,6 +9,10 @@ spring:
           clone-on-start: true
           search-paths: '{application}'
           default-label: 'main'
+  security:
+    user:
+      name: config-server
+      password: mkM5HxI2UpD51E5
 
 server:
   port: 8888
